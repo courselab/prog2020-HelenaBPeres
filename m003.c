@@ -23,6 +23,23 @@
 
 int is_prime (int a)
 {
+  int i ;
+
+
+    while (i < a)
+    {
+        if ((a % i) != 0)
+        {
+            printf ("%d is prime", a);
+        }
+        else
+            if ((a % i) == 0)
+        {
+            printf ("%d is not prime", a);
+        }
+    }
+
+
   return 0;
 }
 
