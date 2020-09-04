@@ -21,8 +21,31 @@
 
 /* Verify if the positive integer 'a' is prime. */
 
-int is_prime (int a)
+int is_prime (int a)    /* Este ponto-e-virgula não deve estar aqui. */
 {
+  int i ;
+
+  int y;
+  y = 0;
+
+    for  (i = 1; i <= a; i++) /* Aqui acho que voce queria um 'for', talvez */
+    {
+        if ((a % i) == 0)
+       {
+         y++ ;
+       }
+    }
+
+    if (y == 1)
+    {
+      a = 1;
+    }   
+  
+  else 
+  {
+    a = 0;
+  }
+
   return 0;
 }
 
