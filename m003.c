@@ -25,26 +25,29 @@ int is_prime (int a)    /* Este ponto-e-virgula não deve estar aqui. */
 {
   int i ;
 
-  int x;
-  x = 0;
-
   int y;
+  y = 0;
+
+  if (a==2)
   y = 1;
 
-    for  (i = 2; i < a; i++) /* Aqui acho que voce queria um 'for', talvez */
-    {
-        if ((a % i) != 0)
-        {
-          a = y;
-        }
-        else
-            if ((a % i) == 0)
-            {
-              a = x;
-            }
-    }
+  if (a==1)
+  y = 0;
 
-  return 0;
+    for  (i = 2; i <= a; i++) /* Aqui acho que voce queria um 'for', talvez */
+    {
+        if ((a % i) == 0)
+        {
+          i = a;
+        }
+
+        if (i == a-1)
+            {
+              y++ ;
+            }
+  
+
+  return y;
 }
 
 #define USAGE "m003 <num>\n"
