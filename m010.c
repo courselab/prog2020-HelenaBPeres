@@ -86,7 +86,7 @@ default :
 return 1 ;
 break ;
 
-}
+} }
 
 /* Do not edit function main. */
 

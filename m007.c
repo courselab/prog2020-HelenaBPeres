@@ -31,7 +31,7 @@ int lettercount (char *s)
     int count;
     int ql;
 
-    
+    ql = 0 ;
     count = 0;
     while ( s[count] != 0)
     {
