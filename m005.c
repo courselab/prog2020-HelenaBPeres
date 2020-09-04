@@ -36,12 +36,12 @@ int determinant (int m[3][3])
 
   d = a - b ;
   
-    printf ("o determinenate e %d", d);
+    /*printf ("o determinenate e %d", d);*/
 
   
   
   
-  return 0;
+  return d;
 }
 
 
