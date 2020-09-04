@@ -21,24 +21,28 @@
 
 /* Verify if the positive integer 'a' is prime. */
 
-int is_prime (int a)
+int is_prime (int a)    /* Este ponto-e-virgula não deve estar aqui. */
 {
   int i ;
 
+  int x;
+  x = 0;
 
-    while (i < a)
+  int y;
+  y = 1;
+
+    for  (i = 2; i < a; i++) /* Aqui acho que voce queria um 'for', talvez */
     {
         if ((a % i) != 0)
         {
-            printf ("%d is prime", a);
+          a = y;
         }
         else
             if ((a % i) == 0)
-        {
-            printf ("%d is not prime", a);
-        }
+            {
+              a = x;
+            }
     }
-
 
   return 0;
 }
